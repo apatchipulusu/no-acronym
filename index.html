@@ -3,35 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>No Acronym</title>
-
-    <link rel="stylesheet" href="styles.css">
+    <title>no acronym</title>
+    <meta name="description" content="Don't use obscure acronyms. Just use the words. A plea for clearer communication at work.">
+    <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
-    <main class="container">
-        <h1>
-            No
-            <span class="crossed-out">
-                <span id="acronym"></span>
-            </span>
-            <span class="cursor"> |</span>
-        </h1>
+    <main>
+        <header class="hero">
+            <h1>
+                no
+                <span class="crossed-out"><span id="acronym"></span></span><span class="cursor">|</span>
+            </h1>
+            <p class="tagline">please don't use obscure acronyms. just use the words.</p>
+        </header>
 
-        <p>
-            Just use the words.
-        </p>
+        <section class="intro">
+            <p class="lead">
+                Acronyms save a few seconds for the sender.
+                They can cost minutes for everyone else.
+            </p>
+            <p>
+                Not everyone works in your department.
+                Not everyone works in your industry.
+                Not everyone interprets the same acronym the same way.
+            </p>
+            <p class="emphasis">When communication matters, write the words.</p>
+        </section>
 
-        <p>
-            Acronyms save a few seconds for the sender.
-        </p>
+        <section class="example">
+            <h2>Imagine a meeting where half the room is nodding along and nobody knows what <abbr title="Key Performance Indicator">KPI</abbr> means. 🤦</h2>
 
-        <p>
-            They can cost minutes for everyone else.
-        </p>
+            <h3 class="bad">❌ Don't do this</h3>
+            <div class="chat">
+                <div class="message">
+                    <span class="sender">Alex</span>
+                    <span class="time">2:15 PM</span>
+                    <p>Can you send me the PRD by EOD?</p>
+                </div>
+                <div class="message">
+                    <span class="sender">Sam</span>
+                    <span class="time">2:16 PM</span>
+                    <p>What's PRD?</p>
+                </div>
+                <div class="message">
+                    <span class="sender">Alex</span>
+                    <span class="time">2:16 PM</span>
+                    <p>Product Requirements Document.</p>
+                </div>
+                <div class="message">
+                    <span class="sender">Sam</span>
+                    <span class="time">2:17 PM</span>
+                    <p>What's EOD?</p>
+                </div>
+                <div class="message">
+                    <span class="sender">Alex</span>
+                    <span class="time">2:17 PM</span>
+                    <p>End of day.</p>
+                </div>
+                <div class="message">
+                    <span class="sender">Sam</span>
+                    <span class="time">2:18 PM</span>
+                    <p>Right. I'll send it over.</p>
+                </div>
+            </div>
+            <p class="note">
+                Several messages later, the actual conversation begins.
+                Sam could have started working minutes sooner — and Alex wouldn't have had to play acronym dictionary.
+            </p>
+
+            <h3 class="good">✅ Instead try this</h3>
+            <div class="chat">
+                <div class="message">
+                    <span class="sender">Alex</span>
+                    <span class="time">2:15 PM</span>
+                    <p>Can you send me the product requirements document by the end of the day?</p>
+                </div>
+                <div class="message">
+                    <span class="sender">Sam</span>
+                    <span class="time">2:15 PM</span>
+                    <p>I'll have it to you by 4 PM.</p>
+                </div>
+            </div>
+            <p class="note">Done.</p>
+        </section>
+
+        <section class="ambig">
+            <h2>Some acronyms have multiple meanings.</h2>
+            <dl>
+                <div class="term">
+                    <dt>ETA</dt>
+                    <dd>Estimated Time of Arrival</dd>
+                    <dd>Edited To Add</dd>
+                </div>
+                <div class="term">
+                    <dt>PO</dt>
+                    <dd>Purchase Order</dd>
+                    <dd>Product Owner</dd>
+                    <dd>Post Office</dd>
+                </div>
+                <div class="term">
+                    <dt>PM</dt>
+                    <dd>Project Manager</dd>
+                    <dd>Product Manager</dd>
+                    <dd>Prime Minister</dd>
+                    <dd>Private Message</dd>
+                    <dd>Post Meridiem</dd>
+                </div>
+            </dl>
+            <p class="emphasis">
+                The problem isn't that acronyms exist.
+                The problem is assuming everyone knows which one you mean.
+            </p>
+        </section>
+
+        <section class="rules">
+            <h2>A simple rule</h2>
+            <ul>
+                <li>If the reader might not know the acronym — <strong>write it out.</strong></li>
+                <li>If you aren't sure — <strong>write it out.</strong></li>
+                <li>If it's the first time you're mentioning it — <strong>write it out.</strong></li>
+                <li>If typing the full phrase takes less time than explaining it later — <strong>definitely write it out.</strong></li>
+            </ul>
+        </section>
+
+        <section class="exceptions">
+            <h2>What about the obvious ones?</h2>
+            <p>
+                Everyone knows what <strong>USA</strong>, <strong>FBI</strong>, and <strong>NASA</strong> mean.
+                Use those. The test is simple: would a new hire, a contractor, or someone from another team
+                know it without looking it up?
+            </p>
+            <p>
+                If you have to ask "should I define this?" — define it.
+                Your future self in a cross-functional meeting will thank you.
+            </p>
+        </section>
+
+        <footer class="closing">
+            <p class="emphasis">The internet has enough confusion already.</p>
+            <p>Use words.</p>
+        </footer>
     </main>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=3"></script>
 
 </body>
 </html>
