@@ -11,7 +11,7 @@
     --accent: #e02424;
     --border: #ddd;
     --chat-bg: #fff;
-    --max-width: 42rem;
+    --max-width: 1100px;
 }
 
 body {
@@ -103,13 +103,84 @@ section {
     line-height: 1.5;
 }
 
-.example h3 {
-    font-size: 1.05rem;
-    margin: 2rem 0 1rem;
+.example-pair {
+    margin-bottom: 2.5rem;
 }
 
-.example h3.bad { color: var(--accent); }
-.example h3.good { color: #1a7f37; }
+.example-pair:last-child {
+    margin-bottom: 0;
+}
+
+.example-pair h3 {
+    font-size: 1.05rem;
+    margin: 0 0 1rem;
+}
+
+.example-pair h3.bad { color: var(--accent); }
+.example-pair h3.good { color: #1a7f37; }
+
+.example-aside .ambig {
+    margin-top: 1.5rem;
+}
+
+.example-aside .ambig h2 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.example-aside .ambig .term dt {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.example-aside .aside-punchline {
+    margin-top: 1.25rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.example-aside .ambig .term:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .example-pair {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        column-gap: 2rem;
+        row-gap: 1rem;
+        align-items: start;
+    }
+
+    .example-pair h3 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .example-pair .chat {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .example-pair .example-aside,
+    .example-pair > .note {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .example-pair .example-aside .note,
+    .example-pair > .note {
+        margin-top: 0;
+    }
+}
 
 .chat {
     background: var(--chat-bg);
@@ -226,4 +297,23 @@ section {
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: -0.02em;
+}
+
+.attribution {
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.attribution a {
+    color: var(--muted);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.attribution a:hover {
+    color: var(--text);
 }

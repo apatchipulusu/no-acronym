@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>no acronym</title>
     <meta name="description" content="Don't use obscure acronyms. Just use the words. A plea for clearer communication at work.">
-    <link rel="stylesheet" href="styles.css?v=4">
+    <link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body>
 
@@ -20,101 +20,97 @@
 
         <section class="intro">
             <p class="lead">
-                Acronyms save a few seconds for the sender.
-                They can cost minutes for everyone else.
+                Acronyms look like they save a few seconds, but they often cost everyone minutes.
             </p>
             <p>
                 Not everyone works in your department.
                 Not everyone works in your industry.
                 Not everyone interprets the same acronym the same way.
             </p>
-            <p class="emphasis">When communication matters, write the words.</p>
         </section>
 
         <section class="example">
-            <h2>Imagine a meeting where half the room is nodding along and nobody knows what <abbr title="Key Performance Indicator">KPI</abbr> means. 🤦</h2>
-
-            <h3 class="bad">❌ Don't do this</h3>
-            <div class="chat">
-                <div class="message">
-                    <span class="sender">Alex</span>
-                    <span class="time">2:15 PM</span>
-                    <p>Can you send me the PRD by EOD?</p>
+            <div class="example-pair">
+                <h3 class="bad">❌ Don't do this</h3>
+                <div class="chat">
+                    <div class="message">
+                        <span class="sender">Alex</span>
+                        <span class="time">2:15 PM</span>
+                        <p>Can you send the PM the PRD by EOD?</p>
+                    </div>
+                    <div class="message">
+                        <span class="sender">Sam</span>
+                        <span class="time">2:16 PM</span>
+                        <p>PRD??</p>
+                    </div>
+                    <div class="message">
+                        <span class="sender">Alex</span>
+                        <span class="time">2:16 PM</span>
+                        <p>Product Requirements Document.</p>
+                    </div>
+                    <div class="message">
+                        <span class="sender">Sam</span>
+                        <span class="time">2:17 PM</span>
+                        <p>PM....... ?</p>
+                    </div>
+                    <div class="message">
+                        <span class="sender">Alex</span>
+                        <span class="time">2:17 PM</span>
+                        <p>Project Manager.</p>
+                    </div>
+                    <div class="message">
+                        <span class="sender">Sam</span>
+                        <span class="time">2:18 PM</span>
+                        <p>What's EOD?</p>
+                    </div>
+                    <div class="message">
+                        <span class="sender">Alex</span>
+                        <span class="time">2:18 PM</span>
+                        <p>End of day.</p>
+                    </div>
+                    <div class="message">
+                        <span class="sender">Sam</span>
+                        <span class="time">2:19 PM</span>
+                        <p>I'll send it to them by 4 PM.</p>
+                    </div>
                 </div>
-                <div class="message">
-                    <span class="sender">Sam</span>
-                    <span class="time">2:16 PM</span>
-                    <p>What's PRD?</p>
-                </div>
-                <div class="message">
-                    <span class="sender">Alex</span>
-                    <span class="time">2:16 PM</span>
-                    <p>Product Requirements Document.</p>
-                </div>
-                <div class="message">
-                    <span class="sender">Sam</span>
-                    <span class="time">2:17 PM</span>
-                    <p>What's EOD?</p>
-                </div>
-                <div class="message">
-                    <span class="sender">Alex</span>
-                    <span class="time">2:17 PM</span>
-                    <p>End of day.</p>
-                </div>
-                <div class="message">
-                    <span class="sender">Sam</span>
-                    <span class="time">2:18 PM</span>
-                    <p>Right. I'll send it over.</p>
+                <div class="example-aside">
+                    <p class="note">
+                        Alex tried to save a few seconds by using acronyms here, but notice how much longer it took to convey the intent to Sam?
+                    </p>
+                    <div class="ambig">
+                        <h2>Some acronyms have multiple meanings.</h2>
+                        <dl>
+                            <div class="term">
+                                <dt>PM can mean different things. Sam isn't sure who Alex wants him to send the document to:</dt>
+                                <dd>Project Manager</dd>
+                                <dd>Product Manager</dd>
+                                <dd>Prime Minister</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <p class="aside-punchline">Just use the words 😩</p>
                 </div>
             </div>
-            <p class="note">
-                Several messages later, the actual conversation begins.
-                Sam could have started working minutes sooner — and Alex wouldn't have had to play acronym dictionary.
-            </p>
 
-            <h3 class="good">✅ Instead try this</h3>
-            <div class="chat">
-                <div class="message">
-                    <span class="sender">Alex</span>
-                    <span class="time">2:15 PM</span>
-                    <p>Can you send me the product requirements document by the end of the day?</p>
+            <div class="example-pair">
+                <h3 class="good">✅ Instead try this</h3>
+                <div class="chat">
+                    <div class="message">
+                        <span class="sender">Alex</span>
+                        <span class="time">2:15 PM</span>
+                        <p>Can you send the project manager the product requirements document by the end of the day?</p>
+                    </div>
+                    <div class="message">
+                        <span class="sender">Sam</span>
+                        <span class="time">2:15 PM</span>
+                        <p>I'll send it to them by 4 PM.</p>
+                    </div>
                 </div>
-                <div class="message">
-                    <span class="sender">Sam</span>
-                    <span class="time">2:15 PM</span>
-                    <p>I'll have it to you by 4 PM.</p>
-                </div>
+                <p class="note">
+                    The intent was conveyed in a fraction of the time, and Sam was able to start working right away without any ambiguity about the ask, or who to send it to.
+                </p>
             </div>
-            <p class="note">Done.</p>
-        </section>
-
-        <section class="ambig">
-            <h2>Some acronyms have multiple meanings.</h2>
-            <dl>
-                <div class="term">
-                    <dt>ETA</dt>
-                    <dd>Estimated Time of Arrival</dd>
-                    <dd>Edited To Add</dd>
-                </div>
-                <div class="term">
-                    <dt>PO</dt>
-                    <dd>Purchase Order</dd>
-                    <dd>Product Owner</dd>
-                    <dd>Post Office</dd>
-                </div>
-                <div class="term">
-                    <dt>PM</dt>
-                    <dd>Project Manager</dd>
-                    <dd>Product Manager</dd>
-                    <dd>Prime Minister</dd>
-                    <dd>Private Message</dd>
-                    <dd>Post Meridiem</dd>
-                </div>
-            </dl>
-            <p class="emphasis">
-                The problem isn't that acronyms exist.
-                The problem is assuming everyone knows which one you mean.
-            </p>
         </section>
 
         <section class="rules">
@@ -135,8 +131,8 @@
                 know it without looking it up?
             </p>
             <p>
-                If you have to ask "should I define this?" — define it.
-                Your future self in a cross-functional meeting will thank you.
+                If you have to ask "should I define this?", define it.
+                Everyone will thank you, including your future self.
             </p>
         </section>
 
@@ -144,6 +140,11 @@
             <p class="emphasis">The internet has enough confusion already.</p>
             <p>Use words.</p>
         </footer>
+
+        <p class="attribution">
+            Based on the incredible <a href="https://nohello.net">nohello.net</a>.
+            Find the source on <a href="https://github.com/apatchipulusu/no-acronym">GitHub</a>.
+        </p>
     </main>
 
     <script src="script.js?v=3"></script>
