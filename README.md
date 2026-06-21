@@ -25,9 +25,8 @@ As the project evolves, improvements will be added incrementally. The goal is to
 
 Future planned improvements include:
 
-* Additional acronym examples
-* Example conversation visual with and without a confusing acronym
-* Improved animations / look of the website
+* Add favicon
+* Add profile pictures for the chat example
 * Localization support
 
 ## Running Locally
