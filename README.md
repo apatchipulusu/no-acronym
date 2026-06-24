@@ -10,7 +10,8 @@ The site is intentionally lightweight and built with plain HTML, CSS, and JavaSc
 
 ```
 ├── assets/
-│   └── favicon/
+│   ├── favicon/
+│   └── profile_pictures/
 ├── index.html
 ├── styles.css
 ├── script.js
@@ -27,7 +28,6 @@ As the project evolves, improvements will be added incrementally. The goal is to
 
 Future planned improvements include:
 
-* Add profile pictures for the chat example
 * Localization support
 
 ## Running Locally
